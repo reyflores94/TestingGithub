@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="sayHello">Here I am!</div>
+</body>
+<style type="text/css">
+body {
+    font-size: 1.6em;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline !important;
+}
+
+button {
+    border: 2px solid green;
+    background: #E5E4E2;
+    font-size: .5em padding: .5em 10em;
+    margin-top: 20em;
+}
+</style>
+<script>
+    var yourName = prompt("What is your name?");
+
+if (yourName != null) {
+    document.getElementById("sayHello").innerHTML = "Hello " + yourName + "!" + "<br />" + "Is this information correct?";
+} else {
+    alert("Please enter a name next time");
+}
+
+
+
+
+// array
+var reySequeira = ["cognitive science", "Bakersfield", 21];
+
+// document.write("21 ", reySequeira[1], "<br />");
+// reySequeira[1] = "reyflores94@gmail.com"
+document.write("You are from ", reySequeira[1] + ".");
+document.write("<br />", "You are ", reySequeira[2] + " years old.");
+document.write("<br />", "You are studying ", reySequeira[0] + ".");
+
+
+var information = prompt("Is this information correct?");
+	if (information == "yes" || information == "Yes") {
+		document.write("<br />" + "<br />" + "Thank you.");
+
+	} else {
+		alert ("Please state what is incorrect.");
+var location = prompt("Is this location correct?");
+		if (location == "no" || location == "No") {
+		document.write("<br />" + "Please state the correct name of the city.");
+}		
+
+	}
+
+/*functions
+
+function inArray(arrayToCheck, value) {
+for (var i = 0; i < arrayToCheck.length; i++) {
+	if (arrayToCheck[i] === value) {
+		return true;
+	}
+}
+return false
+}*/
+
+/*
+function divide(func, num){
+	return func(num);
+}
+ document.write("10 / 4 = ", divide(10/4), "<br />");
+
+*/
+
+
+// looping
+// var i = 10;
+// while (i <= 10) {
+//     document.write(i + "<br />");
+//     i++;
+
+// }
+	// OBJECTS
+// var custom = {
+//     name: "Rey Sequeira",
+//     street: "Roundhill",
+//     city: "Bakersfield",
+//     hobbies: "Playing video games",
+//  
+//     }
+// }
+// document.write("Customer name:", custom.name, "br />");
+// custom.country = "US"
+
+</script>
+
+</html>
